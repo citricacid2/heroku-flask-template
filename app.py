@@ -6,7 +6,7 @@ from flask import Flask, request, send_file
 app = Flask(__name__)
 
 
-@app.route('/testpost/', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 def testpost():
     if len(request.args) == 1:
         with open('test.json') as f:
